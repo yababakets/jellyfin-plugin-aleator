@@ -1,4 +1,4 @@
-<h1 align="center">Jellyfin Merge Versions Plugin</h1>
+<h1 align="center">Jellyfin Aleator Plugin</h1>
 <h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
 
 <p align="center">
