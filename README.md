@@ -1,8 +1,7 @@
 <h1 align="center">Jellyfin Aleator Plugin</h1>
-<h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
 
 <p align="center">
-Jellyfin Merge Versions plugin is a plugin that automatically groups every repeated movie;
+The Aleator plugin displays shuffled movies and shows on the home screen from selected libraries;
 
 </p>
 
@@ -10,7 +9,7 @@ Jellyfin Merge Versions plugin is a plugin that automatically groups every repea
 
 
 ## From Repository
-1. In jellyfin, go to dashboard -> plugins -> Repositories -> add and paste this link https://raw.githubusercontent.com/danieladov/JellyfinPluginManifest/master/manifest.json
+1. In jellyfin, go to dashboard -> plugins -> Repositories -> add and paste this link https://raw.githubusercontent.com/yababakets/jellyfin-plugin-aleator-master/master/manifest.json
 2. Go to Catalog and search for the plugin you want to install
 3. Click on it and install
 4. Restart Jellyfin
