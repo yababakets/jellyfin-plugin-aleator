@@ -7,7 +7,7 @@ The Aleator plugin displays shuffled movies and shows on the home screen from se
 ## Install Process
 
 ### From Repository
-1. In Jellyfin, go to dashboard -> plugins -> Repositories -> add and paste this link: https://raw.githubusercontent.com/yababakets/jellyfin-plugin-aleator-master/master/manifest.json
+1. In Jellyfin, go to dashboard -> plugins -> Repositories -> add and paste this link: https://raw.githubusercontent.com/yababakets/jellyfin-plugin-aleator/master/manifest.json
 
 2. Go to Catalog and search for the Aleator plugin.
 3. Click on it and install.
