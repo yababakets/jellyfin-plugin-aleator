@@ -12,7 +12,7 @@
           "changelog": "Initial release.",
           "targetAbi": "10.9.0.0",  
           "sourceUrl": "https://github.com/yababakets/jellyfin-plugin-aleator/releases/download/1.0/jellyfin-plugin-aleator.zip",
-          "checksum": "d66ff8be8b740d606596a054b002a3134828f1a9aa12c8b664578416203cf4d3",
+          "checksum": "1f4338523340fe6748941caf9438745d0ceb2569419c1a330a08428fdfde53a6",
           "timestamp": "2024-09-24 12:00:00"  
       }
   ]
