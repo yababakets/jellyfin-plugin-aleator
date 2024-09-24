@@ -1,15 +1,10 @@
 {
-    "plugins": [
-      {
-        "name": "Aleator",
-        "guid": "eb5d7894-8eef-4b36-aa6f-5d124e828ce1",
-        "version": "1.0.0",
-        "assemblyPath": "Jellyfin.Plugin.Aleator.dll",
-        "targetAbi": "10.8.0.0",
-        "description": "The Aleator plugin displays shuffled movies and shows on the home screen from selected libraries.",
-        "imageUrl": "https://your-image-url-here.png",
-        "sourceUrl": "https://github.com/yababakets/jellyfin-plugin-aleator-master"
-      }
-    ]
-  }
-  
+  "name": "Aleator",
+  "version": "1.0.0",
+  "description": "Displays shuffled movies and shows on the home screen.",
+  "repository": "https://github.com/yababakets/jellyfin-plugin-aleator-master",
+  "url": "https://raw.githubusercontent.com/yababakets/jellyfin-plugin-aleator-master/master/bin/Jellyfin.Plugin.Aleator.dll",
+  "license": "MIT",
+  "dependencies": [],
+  "jellyfin_version": "10.7.0"
+}
