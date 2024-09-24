@@ -1,19 +1,19 @@
 {
-  "guid": "eb5d7894-8eef-4b36-aa6f-5d124e828ce1",  // Unique identifier for your plugin
+  "guid": "eb5d7894-8eef-4b36-aa6f-5d124e828ce1", 
   "name": "Aleator",
   "description": "A plugin that scans libraries via API to display shuffled content.",
   "overview": "Displays shuffled movies and series from selected libraries on the home screen.",
   "owner": "yababakets",
-  "imageUrl": "https://your-image-url.png",  // URL to a thumbnail image for your plugin
+  "imageUrl": "https://your-image-url.png",  
   "category": "General",
   "versions": [
       {
-          "version": "1.0.0",  // Version of your plugin
+          "version": "1.0.0",  
           "changelog": "Initial release.",
-          "targetAbi": "10.9.0.0",  // The minimum Jellyfin API version your plugin targets
-          "sourceUrl": "https://github.com/yababakets/jellyfin-plugin-aleator/releases/download/v1.0.0/Aleator.zip",  // Direct URL to the zip file containing your plugin's DLL
-          "checksum": "f5385a4a5d403a5ca54a9f07e1a5abbe4ec820bb69e0e6b0de1b87e3c9b49c34",  // Checksum of your plugin zip file
-          "timestamp": "2024-09-24 12:00:00"  // Release date in YYYY-MM-DD HH:MM:SS format
+          "targetAbi": "10.9.0.0",  
+          "sourceUrl": "https://github.com/yababakets/jellyfin-plugin-aleator/releases/download/v1.0.0/Aleator.zip",
+          "checksum": "f5385a4a5d403a5ca54a9f07e1a5abbe4ec820bb69e0e6b0de1b87e3c9b49c34",
+          "timestamp": "2024-09-24 12:00:00"  
       }
   ]
 }
