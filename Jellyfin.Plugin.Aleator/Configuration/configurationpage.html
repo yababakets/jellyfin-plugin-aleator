@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aleator Configuration</title>
+</head>
+
+<body>
+    <div data-role="page" class="page type-interior pluginConfigurationPage aleatorConfigurationPage"
+        data-require="emby-input,emby-button">
+        <div data-role="content">
+            <div class="content-primary">
+                <form class="aleatorConfigurationPage">
+                    <div class="sectionTitleContainer flex align-items-center">
+                        <h2 class="sectionTitle">Aleator Configuration</h2>
+                        <a is="emby-linkbutton" class="raised button-alt headerHelpButton emby-button" target="_blank"
+                            href="https://github.com/yababakets/jellyfin-plugin-aleator">Help</a>
+                    </div>
+                    <div class="verticalSection">
+                        <p>Select libraries to include in shuffling:</p>
+                        <br />
+                    </div>
+                    <br />
+                    <div>
+                        <h3 class="checkboxListLabel">Select libraries:</h3>
+                        <div id="divLibrarySelections" class="paperList checkboxList checkboxList-paperList">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="itemCount">Number of items to display in a row:</label>
+                        <input type="number" id="itemCount" value="3" min="1" />
+                    </div>
+
+                    <button is="emby-button" type="button" class="raised button-submit block emby-button"
+                        id="save-configuration" onclick="saveConfiguration()"><span>Save Configuration</span></button>
+
+                    <button is="emby-button" type="button" class="raised block" id="get-shuffled-content"
+                        onclick="getShuffledContent()"><span>Get Shuffled Content</span></button>
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var pluginId = "f21bbed8-3a97-4d8b-88b2-48aaa65427cb";
+
+            // Function to fetch and display shuffled content
+            function getShuffledContent() {
+                var libraryIds = $('.chkLibrary:checked').map(function () {
+                    return this.getAttribute('data-location');
+                }).get();
+                var itemCount = document.getElementById("itemCount").value;
+
+                var request = {
+                    url: ApiClient.getUrl('Aleator/ShuffledContent?libraryIds=' + JSON.stringify(libraryIds) + '&count=' + itemCount),
+                    type: 'GET'
+                };
+
+                ApiClient.fetch(request).then(function (response) {
+                    Dashboard.alert("Shuffled Content Retrieved: " + JSON.stringify(response));
+                }).catch(function () {
+                    Dashboard.alert({
+                        message: "Unexpected error occurred!"
+                    });
+                });
+            }
+
+            // Load libraries and existing configuration
+            var config = undefined;
+
+            ApiClient.getPluginConfiguration(pluginId).then(function (savedConfig) {
+                config = savedConfig || { LocationsExcluded: [] };
+                
+                ApiClient.getVirtualFolders().then(function (virtualFolders) {
+                    loadVirtualFolders(config, virtualFolders);
+                });
+            });
+
+            function loadVirtualFolders(config, virtualFolders) {
+                var page = $.mobile.activePage;
+                var html = "";
+                html += '<div data-role="controlgroup">';
+                for (var i = 0; i < virtualFolders.length; i++) {
+                    var virtualFolder = virtualFolders[i];
+                    html += getFolderHtml(config, virtualFolder, i);
+                }
+                html += '</div>';
+                $('#divLibrarySelections', page).html(html).trigger('create');
+            }
+
+            function getFolderHtml(currentUserConfig, virtualFolder, index) {
+                var html = "";
+                for (var i = 0; i < virtualFolder.Locations.length; i++) {
+                    var id = "chkFolder" + index + "_" + i;
+                    var location = virtualFolder.Locations[i];
+                    var isChecked = currentUserConfig.LocationsExcluded.includes(location.toLowerCase());
+                    var checkedAttribute = isChecked ? 'checked="checked"' : "";
+                    html += '<label><input is="emby-checkbox" class="chkLibrary" type="checkbox" data-mini="true" id="' + id + '" name="' + id + '" data-location="' + location + '" ' + checkedAttribute + ' /><span>' + location + " - " + virtualFolder.Name + '</span></label>';
+                }
+                return html;
+            }
+
+            function saveConfiguration() {
+                var folders = $('.chkLibrary:checked').map(function () {
+                    return this.getAttribute('data-location');
+                }).get();
+                var itemCount = document.getElementById("itemCount").value;
+
+                ApiClient.getPluginConfiguration(pluginId).then(function (config) {
+                    config.LocationsExcluded = folders;
+                    config.ItemCount = itemCount; // Save the item count as part of the configuration
+                    ApiClient.updatePluginConfiguration(pluginId, config).then(function (res) {
+                        Dashboard.processPluginConfigurationUpdateResult(res);
+                    });
+                });
+            }
+        </script>
+    </div>
+</body>
+
+</html>

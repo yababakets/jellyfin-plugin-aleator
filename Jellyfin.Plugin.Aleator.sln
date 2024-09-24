@@ -1,0 +1,30 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.Plugin.Aleator", "Jellyfin.Plugin.Aleator\Jellyfin.Plugin.Aleator.csproj", "{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Debug|x64.Build.0 = Debug|Any CPU
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB5D7894-8EEF-4B36-AA6F-5D124E828CE1}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CA974E4-4306-49EA-A84B-2EA99B35E80D}
+	EndGlobalSection
+EndGlobal

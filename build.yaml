@@ -1,0 +1,15 @@
+---
+name: "jellyfin-plugin-aleator"
+guid: "eb5d7894-8eef-4b36-aa6f-5d124e828ce1"
+version: "1" # Increment with each new version
+jellyfin_version: "10.7.0" # Adjust based on compatibility, or leave as is
+owner: "yababakets"
+nicename: "Aleator"
+description: "Aleator plugin displays shuffled content from selected libraries on the home screen."
+overview: "Aleator plugin lets users configure and display random selections of movies or shows from selected libraries on the home screen."
+category: "General"
+artifacts:
+  - "Jellyfin.Plugin.Aleator.dll"
+build_type: "dotnet"
+dotnet_configuration: "Release"
+dotnet_framework: "net8.0"
