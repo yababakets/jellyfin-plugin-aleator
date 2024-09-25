@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework> <!-- Change this to net8.0 -->
     <IsPackable>true</IsPackable>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
@@ -11,19 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ReferencedAssemblies\**" />
-    <EmbeddedResource Remove="ReferencedAssemblies\**" />
-    <None Remove="ReferencedAssemblies\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Jellyfin.Common" Version="10.9.11" />
     <PackageReference Include="Jellyfin.Controller" Version="10.9.11" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Configuration\configurationpage.html" />
     <EmbeddedResource Include="Configuration\configurationpage.html" />
   </ItemGroup>
-
 </Project>

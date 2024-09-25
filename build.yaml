@@ -2,7 +2,7 @@
 name: "jellyfin-plugin-aleator"
 guid: "eb5d7894-8eef-4b36-aa6f-5d124e828ce1"
 version: "1.0.0" # Increment with each new version
-jellyfin_version: "10.9.11" # Adjust based on compatibility, or leave as is
+jellyfin_version: "10.9.11" # Adjust based on compatibility
 owner: "yababakets"
 nicename: "Aleator"
 description: "Aleator plugin displays shuffled content from selected libraries on the home screen."
@@ -12,4 +12,4 @@ artifacts:
   - "Jellyfin.Plugin.Aleator.dll"
 build_type: "dotnet"
 dotnet_configuration: "Release"
-dotnet_framework: "net8.0"
+dotnet_framework: "net6.0" # Adjust based on Jellyfin plugin compatibility

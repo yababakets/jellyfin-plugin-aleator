@@ -7,13 +7,13 @@
   "imageUrl": "https://your-image-url.png",  
   "category": "General",
   "versions": [
-      {
-          "version": "1.0.0",  
-          "changelog": "Initial release.",
-          "targetAbi": "10.9.0.0",  
-          "sourceUrl": "https://github.com/yababakets/jellyfin-plugin-aleator/releases/download/1.0/jellyfin-plugin-aleator.zip",
-          "checksum": "1f4338523340fe6748941caf9438745d0ceb2569419c1a330a08428fdfde53a6",
-          "timestamp": "2024-09-24 12:00:00"  
-      }
+    {
+      "version": "1.0.0",  
+      "changelog": "Initial release.",
+      "targetAbi": "10.9.11",  
+      "sourceUrl": "https://github.com/yababakets/jellyfin-plugin-aleator/releases/download/1.0/jellyfin-plugin-aleator.zip",
+      "checksum": "1f4338523340fe6748941caf9438745d0ceb2569419c1a330a08428fdfde53a6",
+      "timestamp": "2024-09-24T12:00:00Z"  
+    }
   ]
 }
