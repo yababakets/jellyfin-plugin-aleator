@@ -1,6 +1,6 @@
 ---
 name: "jellyfin-plugin-aleator"
-guid: "eb5d7894-8eef-4b36-aa6f-5d124e828ce1"
+guid: "e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b"
 version: "1.0.0" # Increment with each new version
 jellyfin_version: "10.9.11" # Adjust based on compatibility
 owner: "yababakets"
