@@ -2,7 +2,7 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{b1b06f4a-0a3d-4fa1-8f01-d462334c17b9}") = "Jellyfin.Plugin.Aleator", "Jellyfin.Plugin.Aleator\Jellyfin.Plugin.Aleator.csproj", "{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}"
+Project("{B1B06F4A-0A3D-4FA1-8F01-D462334C17B9}") = "Jellyfin.Plugin.Aleator", "Jellyfin.Plugin.Aleator\Jellyfin.Plugin.Aleator.csproj", "{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,19 +12,19 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Debug|x64.Build.0 = Debug|Any CPU
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Release|Any CPU.Build.0 = Release|Any CPU
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Release|x64.ActiveCfg = Release|Any CPU
-		{e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b}.Release|x64.Build.0 = Release|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Debug|x64.Build.0 = Debug|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Release|x64.ActiveCfg = Release|Any CPU
+		{E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {d2a55e57-e62c-4ac1-b0b5-8a2a5e8ed3c1}
+		SolutionGuid = {D2A55E57-E62C-4AC1-B0B5-8A2A5E8ED3C}
 	EndGlobalSection
 EndGlobal
