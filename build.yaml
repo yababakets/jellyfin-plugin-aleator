@@ -12,4 +12,4 @@ artifacts:
   - "Jellyfin.Plugin.Aleator.dll"
 build_type: "dotnet"
 dotnet_configuration: "Release"
-dotnet_framework: "net6.0" # Adjust based on Jellyfin plugin compatibility
+dotnet_framework: "net8.0" # Adjust based on Jellyfin plugin compatibility
