@@ -25,7 +25,7 @@ namespace Jellyfin.Plugin.Aleator
 
         public PluginConfiguration PluginConfiguration => Configuration;
 
-        private readonly Guid _id = new Guid("eb5d7894-8eef-4b36-aa6f-5d124e828ce1");
+        private readonly Guid _id = new Guid("e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b");
         public override Guid Id => _id;
 
         public IEnumerable<PluginPageInfo> GetPages()
