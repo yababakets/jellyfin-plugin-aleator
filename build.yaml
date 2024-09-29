@@ -1,6 +1,6 @@
 ---
 name: "jellyfin-plugin-aleator"
-guid: "e9a8b6c0-3a6b-4e1e-a7e6-63d03a45893b"
+guid: "E9A8B6C0-3A6B-4E1E-A7E6-63D03A45893B"
 version: "1.0.0" # Increment with each new version
 jellyfin_version: "10.9.11" # Adjust based on compatibility
 owner: "yababakets"
@@ -12,4 +12,4 @@ artifacts:
   - "Jellyfin.Plugin.Aleator.dll"
 build_type: "dotnet"
 dotnet_configuration: "Release"
-dotnet_framework: "net8.0" # Adjust based on Jellyfin plugin compatibility
+dotnet_framework: "net6.0" # Set to net6.0 for compatibility with .NET 6

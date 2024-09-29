@@ -27,9 +27,9 @@ namespace Jellyfin.Plugin.Aleator.ScheduledTasks
         public Task Execute(CancellationToken cancellationToken, IProgress<double> progress)
         {
             _logger.LogInformation("Starting plugin, Shuffling Movies");
-            _aleatorManager.DisplayShuffledMovies(progress); // Replace MergeMovies with DisplayShuffledMovies
+            _aleatorManager.DisplayShuffledMovies(progress); // Shuffle and display movies
             _logger.LogInformation("Movies shuffled and displayed");
-            return Task.CompletedTask;
+            return Task.CompletedTask; // Return completed task
         }
 
         public IEnumerable<TaskTriggerInfo> GetDefaultTriggers()
@@ -47,7 +47,7 @@ namespace Jellyfin.Plugin.Aleator.ScheduledTasks
 
         public Task ExecuteAsync(IProgress<double> progress, CancellationToken cancellationToken)
         {
-            return Execute(cancellationToken, progress);
+            return Execute(cancellationToken, progress); // Call the synchronous execute method
         }
 
         public string Name => "Shuffle and Display Movies";
@@ -76,7 +76,7 @@ namespace Jellyfin.Plugin.Aleator.ScheduledTasks
             _logger.LogInformation("Starting plugin, Shuffling Episodes");
             _aleatorManager.DisplayShuffledMovies(progress); // Adjust if separate episode shuffling logic is required
             _logger.LogInformation("Episodes shuffled and displayed");
-            await Task.CompletedTask;
+            await Task.CompletedTask; // Await completed task
         }
 
         public IEnumerable<TaskTriggerInfo> GetDefaultTriggers()
@@ -94,7 +94,7 @@ namespace Jellyfin.Plugin.Aleator.ScheduledTasks
 
         public Task ExecuteAsync(IProgress<double> progress, CancellationToken cancellationToken)
         {
-            return Execute(cancellationToken, progress);
+            return Execute(cancellationToken, progress); // Call the asynchronous execute method
         }
 
         public string Name => "Shuffle and Display Episodes";

@@ -1,18 +1,13 @@
 using System;
 using System.Collections.Generic;
-//using System.Globalization;
 using System.Linq;
 using System.Threading;
-//using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using Jellyfin.Data.Enums;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Entities.Movies;
-//using MediaBrowser.Controller.Entities.TV;
 using MediaBrowser.Controller.Library;
-//using MediaBrowser.Controller.Session;
-//using MediaBrowser.Model.Entities;
 using MediaBrowser.Model.IO;
-using Microsoft.Extensions.Logging;
 
 namespace Jellyfin.Plugin.Aleator
 {

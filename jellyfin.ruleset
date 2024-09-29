@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules for Aleator.Plugin" Description="Code analysis rules for Aleator.Plugin.csproj" ToolsVersion="14.0">
+<RuleSet Name="Rules for Aleator.Plugin" Description="Code analysis rules for Aleator.Plugin.csproj" ToolsVersion="16.0">
     <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
         <!-- disable warning SA1009: Closing parenthesis should be followed by a space. -->
         <Rule Id="SA1009" Action="None" />
@@ -46,8 +46,7 @@
         <Rule Id="CA1727" Action="Error" />
         <!-- error on CA1843: Do not use 'WaitAll' with a single task -->
         <Rule Id="CA1843" Action="Error" />
-        <!-- error on CA2016: Forward the CancellationToken parameter to methods that take one
-            or pass in 'CancellationToken.None' explicitly to indicate intentionally not propagating the token -->
+        <!-- error on CA2016: Forward the CancellationToken parameter to methods that take one or pass in 'CancellationToken.None' explicitly -->
         <Rule Id="CA2016" Action="Error" />
         <!-- error on CA2254: Template should be a static expression -->
         <Rule Id="CA2254" Action="Error" />
@@ -75,9 +74,7 @@
         <Rule Id="CA1724" Action="Info" />
         <!-- disable warning CA1805: Do not initialize unnecessarily -->
         <Rule Id="CA1805" Action="Info" />
-        <!-- disable warning CA1812: internal class that is apparently never instantiated.
-            If so, remove the code from the assembly.
-            If this class is intended to contain only static members, make it static -->
+        <!-- disable warning CA1812: internal class that is apparently never instantiated. -->
         <Rule Id="CA1812" Action="Info" />
         <!-- disable warning CA1822: Member does not access instance data and can be marked as static -->
         <Rule Id="CA1822" Action="Info" />

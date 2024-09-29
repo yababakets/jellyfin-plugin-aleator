@@ -25,8 +25,7 @@ namespace Jellyfin.Plugin.Aleator.Api
         public AleatorController(
             ILibraryManager libraryManager,
             ILogger<AleatorController> logger,
-            IFileSystem fileSystem
-        )
+            IFileSystem fileSystem)
         {
             _libraryManager = libraryManager;
             _logger = logger;

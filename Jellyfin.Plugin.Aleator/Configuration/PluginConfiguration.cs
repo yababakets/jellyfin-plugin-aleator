@@ -13,7 +13,7 @@ namespace Jellyfin.Plugin.Aleator.Configuration
 
         public PluginConfiguration()
         {
-            LocationsExcluded = Array.Empty<string>();
+            LocationsExcluded = Array.Empty<string>(); // Initialize with an empty array
             ItemCount = 3; // Default value for item count
         }
     }
